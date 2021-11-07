@@ -1,0 +1,75 @@
+.topic_search{
+    position: relative;
+}
+
+.topic_search_input{
+    padding: 1em;
+    width: 300px;
+    border: 2px solid rgba(0, 0, 0, 0.185);
+    outline: none;
+    transition: 0.2s ease-in-out;
+
+}
+
+.topic_search_input:focus,.topic_search_input:hover{
+    border-color: rgba(0, 140, 255, 0.507);
+}
+
+.options_for_topic_search{
+    width: 100%;
+    max-height: 250px;
+    position: absolute;
+    background: white;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 8%);
+    z-index: 1;
+    overflow-y: scroll;
+    display: none;
+}
+
+.topic_search_input:focus + .options_for_topic_search{
+    display: block;
+}
+
+.options_for_topic_search p{
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.596);
+    font-weight: 500;
+    padding: 0.3em 1em;
+}
+
+.options_for_topic_search p:hover{
+    background: rgba(0, 140, 255, 0.507);
+    color: white;
+}
+
+.display_selected{
+    width: 100%;
+    height: 5em;
+    border: 2px solid rgba(0, 0, 0, 0.185);
+    padding: 0.6em;
+    overflow-y: scroll;
+    margin-top: 0.2em;
+}
+
+.display_selected span{
+    background: rgb(50, 149, 206);
+    color: white;
+    text-transform: capitalize;
+    padding: 0.7em 1em;
+    border-radius: 20px;
+    font-size: 0.7em;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-right: 1em;
+    align-items: center;
+    margin-bottom: 1em;
+    
+}
+
+.iconIn_topic_search{
+    font-size: 1.5em !important;
+    margin-left: 0.4em;
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+}

@@ -1,0 +1,48 @@
+.edit_profile_container{
+    max-height: 600px;
+
+}
+
+.edit_profile_container .main_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+    width: 100%;
+}
+
+.edit_profile_container .main_content .img_box{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(90, 90, 90, 0.527);
+    border: 1px solid rgba(47, 83, 47, 0.534);
+}
+
+.edit_profile_container .main_content .img_box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.edit_profile_container .main_content .img_box img:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.edit_profile_container .main_content .qualifications_edit{
+    width: 100%;
+}
+
+.username{
+   width: 80%;
+  padding: 0;
+  margin-top: 1em;
+}
+
+.label_for_text_area{
+    width: 90%;
+    font-size: 1.1em;
+}

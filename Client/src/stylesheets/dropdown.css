@@ -1,0 +1,23 @@
+.dropdown{
+    font-size: 1em;
+    border-radius: 3px;
+    padding: 0.3em;
+    text-transform: capitalize;
+    border: 2px solid rgba(0, 0, 0, 0.26);
+    background: rgb(43, 142, 223);
+    color: white;
+    outline: none;
+}
+
+.dropdown option{
+    background: white;
+    color: black;
+    padding-top: 2em;
+    border-radius: 3px;
+    border: none;
+
+}
+
+
+
+

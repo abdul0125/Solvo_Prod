@@ -1,0 +1,111 @@
+.timeTableContainer{
+    margin: 3em;
+    margin-top: 1em;
+    margin-left: -0.5em;
+    max-width: 700px;
+    border-radius: 1em;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.486);
+    overflow: hidden;
+  
+}
+
+.timeTableContainer h1{
+    background: rgb(53, 159, 230);
+    display: inline-flex;
+    color: white;
+    font-size: 1.3em;
+    text-transform: capitalize;
+    padding: 0.2em 2em;
+    border-radius: 0 0 20px 0;
+}
+
+.timeTableContainer .container{
+    padding: 1em;
+    display: flex;
+}
+
+.timeTableContainer .container span{
+    width: 120px;
+    border: 1px solid rgba(0, 0, 0, 0.336);
+    padding: 0.4em 1em;
+    border-radius: 10px 0px 10px 0px;
+    margin-right: 0.2em;
+    background: rgba(88, 243, 88, 0.295);
+}
+
+.timeTableContainer .container div{
+    display: none;
+}
+
+.timeTableContainer .container div.active{
+    display: flex;
+}
+
+
+
+.timeTableContainer .container span input{
+    border: none;
+    background: rgba(88, 243, 88, -1.822);
+    outline: none;
+    font-weight: 700;
+    margin-left: 0.9em;
+}
+.container1{
+    padding: 1em;
+    display: flex;
+}
+
+ .container1 span{
+    width: 120px;
+    border: 1px solid rgba(0, 0, 0, 0.336);
+    padding: 0.4em 1em;
+    border-radius: 10px 0px 10px 0px;
+    margin-right: 0.2em;
+    background: rgba(88, 243, 88, 0.295);
+}
+
+ .container1 div{
+    display: flex;
+}
+
+ .container1 div.active{
+    display: flex;
+}
+
+
+
+ .container1 span input{
+    border: none;
+    background: rgba(88, 243, 88, -1.822);
+    outline: none;
+    font-weight: 700;
+    margin-left: 0.9em;
+}
+
+.timer_toggler{
+
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    background: none;
+    position: absolute;
+    width: 70px;
+    width: 50px;
+}
+
+.timeTableContainer .container .first_span{
+    background: none;
+    text-transform: capitalize;
+    border-radius: 0;
+    font-weight: 600;
+}
+.container1{
+    background: none;
+    text-transform: capitalize;
+    border-radius: 0;
+    font-weight: 600;
+}

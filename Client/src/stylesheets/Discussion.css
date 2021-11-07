@@ -1,0 +1,86 @@
+.ask_expert_container{
+    display: flex;
+
+}
+
+.sidebar_container{
+    width: 20%;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10em;
+    
+}
+
+.posts_container{
+    width: 50%;
+}
+
+.post_footer_container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.btns_in_discussion_post{
+    font-size: 0.7em !important;
+}
+
+@media screen and (max-width:1453px){
+    
+        .posts_container{
+            width: 60%;
+    }
+
+    .answer_btn{
+        font-size: 0.7em !important;
+    }
+}
+
+
+@media screen and (max-width:1338px){
+    .sidebar_container{
+        width: 30%;
+        margin-right: 2em;
+    }
+
+    .answer_btn{
+        font-size: 0.7em !important;
+    }
+}
+
+@media screen and (max-width:1179px){
+    .posts_container{
+        width: 80%;
+        margin-right: 1em;
+    }
+
+    .post_footer_container{
+        justify-content: flex-start;
+    }
+
+    
+}
+
+@media screen and (max-width:1014px){
+    .ask_expert_container{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        
+
+    }
+
+    .sidebar_container{
+        width: 98%;
+        margin: 10px 0;
+        
+    }
+
+    .posts_container{
+        width: 98%;
+        margin: auto;
+    }
+    
+}

@@ -1,0 +1,42 @@
+.favourites{
+    position: absolute;
+    width: 60%;
+    z-index: 14;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -100%;
+    transition: 0.8s ease-in-out;
+    opacity: 0;
+}
+.favourites.active{
+    top: 10%;
+    opacity: 1;
+}
+.messages{
+    position: absolute;
+    width: 900px;
+    z-index: 14;
+    left: 60%;
+    transform: translateX(-50%);
+    top: -100%;
+    transition: 0.8s ease-in-out;
+    opacity: 0;
+}
+.messages.active{
+    top: 10%;
+    opacity: 1;
+}
+.notifications{
+    position: absolute;
+    width: 900px;
+    z-index: 14;
+    left: 48%;
+    transform: translateX(-50%);
+    top: -100%;
+    transition: 0.8s ease-in-out;
+    opacity: 0;
+}
+.notifications.active{
+    top: 10%;
+    opacity: 1;
+}

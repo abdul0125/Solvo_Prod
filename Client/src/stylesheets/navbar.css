@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,200&display=swap');
+
+.navbar {
+  display: flex;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.39);
+  justify-content: space-between;
+  padding: 1em 3%;
+  align-items: center;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.459);
+  /* background: url("https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"); */
+  /* background-position: start;
+  background-size: cover; */
+  backdrop-filter: blur(40px);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 111;
+}
+
+.navbar a {
+  font-family: "Encode Sans SC", sans-serif;
+  letter-spacing: 1px;
+  margin-right: 2em;
+  color: white;
+  text-decoration: none;
+  margin-top: 0.1em;
+  font-weight: 900;
+  
+}
+
+
+
+.navbar .hamburger,
+.navbar .close_icon {
+  display: none;
+}
+
+.left_section {
+  display: flex;
+  position: relative;
+}
+
+.left_section_alignment{
+  transform: translateX(50%);
+}
+
+.solvokit_logo{
+  width:200px;
+  position: absolute;
+  margin-left: -2em;
+}
+
+
+.left_section li {
+  list-style: none;
+}
+
+.left_section li a {
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s ease-in;
+  font-family: "Encode Sans SC", sans-serif;
+  padding: 33% 1.4em 27.8% 1.4em;
+}
+
+.left_section li a {
+  position: relative;
+  top: -0.5em;
+  
+}
+
+.left_section li a span{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0.4em;
+  text-align: center;
+}
+
+
+.left_section li a .navbar_icons {
+  font-size: 2em;
+  margin-top: 0.3em;
+}
+
+.left_section li a:hover, .left_section li a.active{
+  background: rgba(0, 0, 0, 0.486);
+  color: white;
+}
+
+.navbar .right_section {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.right_section .left_section li a {
+  position: relative;
+  top: 0;
+  padding: 40% 1.4em 20.4% 1.4em;
+}
+
+.navbar .right_section .search_bar_container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 30%;
+}
+
+.search_input {
+  color: white;
+  padding: 0.3em;
+  font-size: 1em;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.438);
+  color: black;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  flex: 1 1;
+  padding-right: 3em;
+  z-index: 1;
+}
+
+.search_input::placeholder {
+  color: rgba(0, 0, 0, 0.466);
+}
+
+.search_icon {
+  font-size: 1.7em !important;
+  position: absolute;
+  right: 0.11em;
+  cursor: pointer;
+  color: gray;
+}
+
+.search_result {
+  width: 438px;
+  height: 80vh;
+  max-height: 500px;
+  background: rgba(255, 255, 255, 1);
+  position: absolute;
+  box-shadow: 2px 2px 10px rgb(0 0 0 / 38%);
+  top: -650px;
+  right: 0;
+  padding: 1em 2em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transition: all 1s ease-in-out;
+}
+
+.search_result.active {
+  display: block;
+  top: 55px;
+}
+
+.filters_section {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  align-items: center;
+  margin: 0.5em;
+}
+
+
+.search_result .filters_section .filters_btn {
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+
+  background: rgb(31, 125, 187);
+  box-shadow: 2px 2px 6px rgb(0 0 0 / 34%);
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0.57em 0;
+  /* margin-bottom: 0.5em; */
+  z-index: 0;
+}
+
+.navbar .select_filters_container {
+  position: absolute;
+  width: 38%;
+  height: 70vh;
+  max-height: 626px;
+  /* box-shadow: 15px 11px 10px rgb(0 0 0); */
+  top: 80px;
+  left: 0;
+  /* background: rgba(0, 0, 0, 0.637); */
+  background: white;
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+  overflow-y: scroll;
+  box-shadow: 2px 2px 10px rgb(0 0 0 / 38%);
+  display: none;
+  z-index: 20;
+}
+
+.navbar .select_filters_container.active{
+    display: block;
+}
+
+.navbar .select_filters_container .select_filter {
+  padding: 1em;
+  width: 100%;
+  /* max-width: 493px; */
+  height: 100%;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* z-index: 1; */
+  padding-top: 2em;
+}
+
+.navbar .select_filters_container .select_filter h1{
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    text-transform: capitalize;
+    font-size: 1em;
+}
+
+
+.search_result .profile .img_box {
+  background: gray;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+
+.search_result .profile {
+  color: black;
+  padding: 0.3em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5em;
+  z-index: 21;
+}
+
+.search_result .profile:hover {
+  cursor: pointer;
+  background: rgba(128, 128, 128, 0.226);
+}
+
+.search_result .profile .text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.search_result .profile .text .name {
+  font-size: 1.3em;
+  text-transform: capitalize;
+}
+
+.search_result .profile .rating {
+  align-items: flex-end;
+  color: rgb(255, 145, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.option{
+  margin-bottom: 2em;
+}
+
+
+.filters {
+  display: flex;
+  justify-content: left;
+  max-width: 70%;
+  margin-top: 1em;
+  margin-left: 2em;
+  margin-bottom: 1em;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.submit_btn {
+  padding: 0.6em 2em;
+  font-size: 1em;
+  text-transform: capitalize;
+  /* position: absolute; */
+  right: -19em;
+  bottom: 0em;
+  cursor: pointer;
+  position: relative;
+  margin-top: 1em;
+}
+
+.navbar .select_filters_container .select_filter .select_filter_close{
+    position: absolute;
+    right: 3em;
+    top: 0.4em;
+    cursor: pointer;
+}
+
+.MuiSlider-root {
+    padding: 20px 0;
+    width: 282px !important;
+    margin-left: 1.6em;
+}
+
+.radio_in_filter{
+  display: none;
+}
+
+.lables_in_filter{
+  padding: 0.4em 1em;
+  background: white;
+  color: black;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.199);
+  transition: 0.2s ease-in;
+  text-transform: capitalize;
+  
+}
+
+
+
+
+.lables_in_filter:hover{
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.048);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.192);
+}
+
+
+
+.radio_in_filter:checked + .lables_in_filter{
+  background: rgb(62, 162, 243);
+  color: white;
+  font-weight: 600;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.192);
+}
+
+
+
+.price_display{
+  border: 1px solid rgba(0, 0, 0, 0.158);
+  padding: 0.5em 1em;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.082);
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.rate_per_hour{
+  display: flex;
+  flex-direction: column;
+}
+
+.icons_around_filter_btn_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.192);
+  padding: 0.3em;
+  text-transform: capitalize;
+  border-radius: 10%;
+  transition: 0.3s ease-in-out;
+  min-width: 4em;
+}
+
+.icons_around_filter_btn_container img{
+  width: 30px;
+  height: 30px;
+  filter: invert(1);
+  text-align: center;
+}
+
+.icons_around_filter_btn_container:hover{
+  background: rgba(0, 0, 0, 0.096);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.267);
+  cursor: pointer;
+}
+
+.icons_around_filter_btn_container p{
+  margin-top: -5px;
+  font-size: 0.8em;
+}
+
+.icons_around_filter_btn{
+  font-size: 1.7em !important;
+}
+
+.minimum_experience_container{
+  margin-bottom: 0;
+}
+
+.close_icon_in_search_section{
+  position: absolute;
+  bottom: 10px;
+  right: 194px;
+  font-size: 2em;
+}
+
+
+@media screen and (max-width: 1200px){
+  .solvokit_logo{
+    width:150px;
+    
+  }
+
+  .left_section_alignment {
+    transform: translateX(29%);
+}
+
+.search_input{
+  padding-right:0;
+}
+}
+
+

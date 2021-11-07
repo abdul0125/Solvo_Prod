@@ -1,0 +1,23 @@
+.group_call_button {
+  border-radius: 50px;
+  outline: none;
+  border: 1px solid #e6e5e8;
+  font-size: 26px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  width: 170px;
+  transition: 0.3s;
+  position: absolute;
+  left: 0px;
+  bottom: 21%;
+  background-color: #282C34;
+  color: #fbfaff;
+  margin-left: 25px;
+}
+
+.group_call_button:hover {
+  background-color: #fff8f8;
+  color: #020008;
+  /* background-color: #000000; */
+  opacity: 0.5;
+}

@@ -1,0 +1,13 @@
+.login_btn{
+    margin-top: 1em;
+}
+
+.otp{
+    margin-top: 1em;
+}
+
+.back_to_login{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
